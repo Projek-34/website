@@ -13,3 +13,22 @@ main {
   align-items: center;
   height: 100vh;
 }
+
+.breathing-glow {
+  animation: breathe 4s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+    filter: brightness(1.1);
+  }
+}
